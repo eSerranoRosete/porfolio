@@ -59,7 +59,7 @@ const Home: NextPage = () => {
               href="/skills"
               className="float-right flex items-center text-3xl font-light uppercase lg:text-sm"
             >
-              Full List of Skills <ArrowLongRightIcon className="ml-2 w-5" />
+              Full Skill Set <ArrowLongRightIcon className="ml-2 w-10 lg:w-6" />
             </Link>
           </span>
           <div>
