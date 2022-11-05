@@ -18,7 +18,7 @@ const NavBar = () => {
           /> */}
           EDUARDO SERRANO
         </Link>
-        <Bars2Icon className="w-14" />
+        <Bars2Icon className="w-14 lg:hidden" />
         <ul className="hidden items-center space-x-6 text-xs lg:flex">
           <li className="opacity-70 hover:opacity-100">
             <Link href="https://twitter.com/eserrano_r" target="_blank">

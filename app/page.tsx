@@ -1,15 +1,19 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
-import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import NavBar from "../components/navigation/NavBar";
 
 const Home: NextPage = () => {
   return (
     <>
-      <NavBar />
-      <Hero />
+      <Hero>
+        <h1 className="mb-10 text-9xl lg:text-8xl">
+          A powerful and impactful title{" "}
+          <span className="font-extralight italic opacity-40">
+            should be displayed here to cath the attention.
+          </span>
+        </h1>
+      </Hero>
       <section className="bg-zinc-100">
         <div className="container relative m-auto py-32 px-10 ">
           <hr className="border border-zinc-900/60" />
@@ -38,9 +42,9 @@ const Home: NextPage = () => {
               </p>
               <a
                 href=""
-                className="mt-10 inline-flex w-full items-center justify-center rounded-md border border-zinc-900 px-28 py-3 text-center text-4xl text-zinc-900 lg:w-auto lg:text-lg"
+                className="mt-10 inline-flex w-full items-center justify-center rounded-md border border-zinc-900 px-28 py-3 text-center text-5xl text-zinc-900 lg:w-auto lg:text-lg"
               >
-                Hire Me <ArrowLongRightIcon className="ml-2 w-5" />
+                Hire Me <ArrowLongRightIcon className="ml-2 w-10 lg:w-5" />
               </a>
             </div>
           </div>
@@ -48,12 +52,12 @@ const Home: NextPage = () => {
       </section>
 
       <section className="bg-zinc-100 py-32">
-        <div className="container m-auto grid auto-rows-min gap-12 rounded-md bg-black px-10 py-20 text-white shadow-xl lg:grid-cols-3 lg:gap-5">
+        <div className="container m-auto grid auto-rows-min gap-20 rounded-md bg-black px-10 py-20 text-white shadow-xl lg:grid-cols-3 lg:gap-5 lg:py-10">
           <span className="h-20 text-6xl font-medium lg:col-span-3 lg:text-3xl">
-            Skills{" "}
+            Skills
             <Link
               href="/skills"
-              className="float-right flex items-center text-2xl font-light uppercase lg:text-sm"
+              className="float-right flex items-center text-3xl font-light uppercase lg:text-sm"
             >
               Full List of Skills <ArrowLongRightIcon className="ml-2 w-5" />
             </Link>
@@ -119,13 +123,13 @@ const Home: NextPage = () => {
           </h2>
           <Link
             href="/projects"
-            className="flex cursor-pointer items-center text-4xl lg:text-xl"
+            className="flex cursor-pointer items-center text-5xl lg:text-xl"
           >
-            View Recent Projects <ArrowLongRightIcon className="ml-3 w-8" />
+            View Recent Projects{" "}
+            <ArrowLongRightIcon className="ml-3 w-12 lg:w-8" />
           </Link>
         </div>
       </section>
-      <Footer />
     </>
   );
 };
