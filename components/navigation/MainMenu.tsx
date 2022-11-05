@@ -12,9 +12,7 @@ const MainMenu = () => {
         <Link
           href="/"
           className={`cursor-pointer border-b-2 border-black pb-1 opacity-70 hover:opacity-100 ${
-            pathname == "/"
-              ? "border-emerald-500 text-emerald-500 underline"
-              : ""
+            pathname == "/" ? "border-emerald-500 text-emerald-500" : ""
           }`}
         >
           About
@@ -24,9 +22,7 @@ const MainMenu = () => {
         <Link
           href="/skills"
           className={`cursor-pointer border-b-2 border-black pb-1 opacity-70 hover:opacity-100 ${
-            pathname == "/skills"
-              ? "border-emerald-500 text-emerald-500 underline"
-              : ""
+            pathname == "/skills" ? "border-emerald-500 text-emerald-500" : ""
           }`}
         >
           Skills
@@ -36,9 +32,7 @@ const MainMenu = () => {
         <Link
           href="/projects"
           className={`cursor-pointer border-b-2 border-black pb-1 opacity-70 hover:opacity-100 ${
-            pathname == "/projects"
-              ? "border-emerald-500 text-emerald-500 underline"
-              : ""
+            pathname == "/projects" ? "border-emerald-500 text-emerald-500" : ""
           }`}
         >
           Projects

@@ -5,9 +5,9 @@ const Skills = () => {
     <>
       <Hero>
         <h1 className="mb-10 text-9xl lg:text-8xl">
-          I have been learning{" "}
+          I have been learning a lot of things lately.{" "}
           <span className="font-extralight italic opacity-40">
-            a lot of things lately.
+            And I absolutely love it.
           </span>
         </h1>
       </Hero>
