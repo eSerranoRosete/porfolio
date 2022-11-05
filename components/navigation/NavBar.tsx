@@ -1,21 +1,25 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Bars2Icon } from "@heroicons/react/20/solid";
 
 const NavBar = () => {
   return (
     <header className="absolute top-0 z-50 w-full">
-      <nav className="container m-auto flex items-center justify-between px-10 py-6 text-white">
-        <h6 className="flex flex-grow items-baseline font-semibold">
-          <Image
+      <nav className="container m-auto flex items-center justify-between px-10 py-10 text-white">
+        <Link
+          href="/"
+          className="flex w-fit items-baseline text-4xl font-semibold lg:text-base"
+        >
+          {/* <Image
             src="/inteminer-icon.svg"
             alt="Inteminer Icon"
             width={15}
             height={15}
             className="mr-2"
-          />
+          /> */}
           EDUARDO SERRANO
-        </h6>
-        <ul className="flex items-center space-x-6 text-xs">
+        </Link>
+        <Bars2Icon className="w-14" />
+        <ul className="hidden items-center space-x-6 text-xs lg:flex">
           <li className="opacity-70 hover:opacity-100">
             <Link href="https://twitter.com/eserrano_r" target="_blank">
               Twitter

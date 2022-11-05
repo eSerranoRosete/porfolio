@@ -2,11 +2,11 @@ import Link from "next/link";
 
 const MainMenu = () => {
   return (
-    <ul className="flex space-x-6">
+    <ul className="flex space-x-8 text-4xl lg:text-base">
       <li>
         <Link
           href="/"
-          className="cursor-pointer border-b-2 border-emerald-500 pb-1 font-semibold text-emerald-500 opacity-70 hover:opacity-100"
+          className="cursor-pointer border-b-2 border-emerald-500 pb-1 font-semibold text-emerald-500"
         >
           About
         </Link>
