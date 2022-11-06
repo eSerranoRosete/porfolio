@@ -24,7 +24,7 @@ const MainMenu = () => {
               : ""
           }`}
         >
-          About
+          Inicio
         </Link>
       </li>
       <li>
@@ -36,7 +36,7 @@ const MainMenu = () => {
               : ""
           }`}
         >
-          Skills
+          Habilidades
         </Link>
       </li>
       <li>
@@ -48,7 +48,7 @@ const MainMenu = () => {
               : ""
           }`}
         >
-          Projects
+          Proyectos
         </Link>
       </li>
     </motion.ul>

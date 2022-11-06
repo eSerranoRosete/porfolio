@@ -4,9 +4,11 @@ import MainMenu from "./navigation/MainMenu";
 const Hero = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="relative overflow-clip bg-black ">
-      <div className="container m-auto py-52 px-10 text-white ">
-        {children}
-        <MainMenu />
+      <div className="container m-auto flex min-h-screen items-center px-10 text-white ">
+        <div>
+          {children}
+          <MainMenu />
+        </div>
       </div>
     </div>
   );

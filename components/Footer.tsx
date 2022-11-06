@@ -6,22 +6,22 @@ const Footer = () => {
     <footer className="bg-black">
       <div className="container m-auto py-32 px-10 text-white">
         <div className="mb-20 text-7xl lg:text-6xl">
-          <p>Want to connect?</p>
+          <p>Te gustaría conectar?</p>
           <p>
-            Send me an email at{" "}
+            Envíame un email a{" "}
             <a
               href="mailto:eserrano@inteminer.com"
               className="font-thin italic underline"
             >
               eserrano@inteminer.com
             </a>{" "}
-            or see my{" "}
+            o ve mi{" "}
             <Link
               target="_blank"
               href="https://inteminer.vercel.app/633519f1042a8c450319d886"
               className="font-extralight italic underline"
             >
-              Digital Business Card
+              Tarjeta Digital
             </Link>
           </p>
         </div>

@@ -5,6 +5,7 @@ import Hero from "../../components/Hero";
 import TechStackItem from "../../components/TechStackItem";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
+import Footer from "../../components/Footer";
 
 const Projects = () => {
   return (
@@ -16,28 +17,31 @@ const Projects = () => {
           transition={{ ease: "easeInOut", duration: 1 }}
           className="mb-10 text-9xl lg:text-8xl"
         >
-          Take a look at some of the projects I have{" "}
-          <span className="font-thin italic opacity-50">been working on.</span>
+          Hecha un vistazo a algunos de los proyectos{" "}
+          <span className="font-thin italic opacity-50">
+            en los que he trabajado.
+          </span>
         </motion.h1>
       </Hero>
       <section className="space-y-20 bg-zinc-100 py-32">
-        <div className="container m-auto gap-5 space-y-10 lg:grid lg:grid-cols-2 lg:space-y-0">
+        <div className="container m-auto gap-5 space-y-28 lg:grid lg:grid-cols-2 lg:space-y-0">
           <div className="col-span-2 space-y-20 rounded-xl border border-black bg-black px-10 py-32 text-white lg:grid lg:grid-cols-2 lg:space-y-0 lg:py-10">
             <div>
               <h2 className="mb-10 text-7xl font-medium lg:text-4xl">
-                Digital Business Cards
+                Tarjetas de Presentación Digital
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
-                <p className="mb-5">
-                  Web Application for creating digital bussiness cards with{" "}
-                  <b>+100 users.</b> Maps through user info stored in database
-                  and renders react application. User content served from
-                  express REST API with capability for user uploads stored in
-                  S3.
+                <p className="mb-5 leading-relaxed">
+                  Aplicación web para crear tarjetas de presentación digitales
+                  con más de <b className="text-emerald-500">100 usuarios.</b>{" "}
+                  Obtiene datos de usuario de una{" "}
+                  <strong className="text-emerald-500">REST API</strong>{" "}
+                  construida con express y con capacidades de almacenamiento de
+                  archivos de usuario en S3.
                 </p>
-                <p>
-                  Dinamic generation of QR code and VCF file to avoid unnecesary
-                  file storage.
+                <p className="leading-relaxed">
+                  Generación dinámica de QR y VCF para evitar almacemamiento de
+                  archivos estáticos.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
@@ -55,10 +59,10 @@ const Projects = () => {
             />
             <Link
               target="_blank"
-              className="flex w-full items-center justify-center rounded-md border border-white py-2 text-3xl lg:text-sm"
+              className="flex w-full items-center justify-center rounded-md border border-white py-3 text-4xl lg:text-sm"
               href="https://inteminer.vercel.app/6318075e2146d942018ce831"
             >
-              Open Live Project{" "}
+              Ver Projecto en Vivo
               <ArrowUpRightIcon className="ml-2 w-10 lg:w-5" />
             </Link>
           </div>
@@ -66,19 +70,17 @@ const Projects = () => {
           <div className="space-y-20 rounded-xl border border-black px-10 py-10">
             <div>
               <h2 className="mb-10 text-7xl font-medium lg:text-4xl">
-                Real Estate Mortage Simulator
+                Cotizador de Precios de Terrenos Residenciales
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
-                <p className="mb-5">
-                  Application used by <b>+75</b> Real Estate agents to calculate
-                  mortage payments for a specific company. Application fetches
-                  user data from API to determine the email the notification
-                  will be sent to when someone uses the Calculator, serving as a
-                  lead generator.
-                </p>
-                <p>
-                  Versions for public and certified agents with different inputs
-                  and capabilities.
+                <p className="mb-5 leading-relaxed">
+                  Aplicación utilizada por{" "}
+                  <b className="text-emerald-500">+75 asesores</b> como medio de
+                  captación de clientes. La aplicación te permite calcular el
+                  precio de un terreno así como los pagos mensuales. El asesor
+                  recibe una{" "}
+                  <b className="text-emerald-500">notificación por email</b>{" "}
+                  cuando algún cliente utiliza el cotizador.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
@@ -95,10 +97,10 @@ const Projects = () => {
             />
             <Link
               target="_blank"
-              className="flex w-full items-center justify-center rounded-md border border-black py-2 text-3xl lg:text-sm"
+              className="flex w-full items-center justify-center rounded-md border border-black py-3 text-4xl lg:text-sm"
               href="https://cotizador.inteminer.com/cliente/6351ebc0b83b047c5dff0b88"
             >
-              Open Live Project{" "}
+              Ver Projecto en Vivo
               <ArrowUpRightIcon className="ml-2 w-10 lg:w-5" />
             </Link>
           </div>
@@ -110,12 +112,12 @@ const Projects = () => {
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
                 <p className="mb-5">
-                  Static website for company built with astro and deployed to
-                  shared hosting. Contact form connected to 3rd party service.
+                  Sitio web estático diseñado y construido para una compañía
+                  integradora de sistemas de seguridad.
                 </p>
                 <p>
-                  Designed logo and website using tailwindcss design system with
-                  fully integrated mobile responsiveness.
+                  Diseño de logo y sitio web responsibo utilizando sistema de
+                  diseño Tailwindcss.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
@@ -131,15 +133,16 @@ const Projects = () => {
             />
             <Link
               target="_blank"
-              className="flex w-full items-center justify-center rounded-md border border-black py-2 text-3xl lg:text-sm"
+              className="flex w-full items-center justify-center rounded-md border border-black py-3 text-4xl lg:text-sm"
               href="https://segday.mx"
             >
-              Open Live Project{" "}
+              Ver Projecto en Vivo
               <ArrowUpRightIcon className="ml-2 w-10 lg:w-5" />
             </Link>
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

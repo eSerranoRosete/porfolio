@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import NavBar from "../components/navigation/NavBar";
 import { AnalyticsWrapper } from "../components/analytics";
 import "../styles/globals.css";
@@ -17,7 +16,6 @@ export default function RootLayout({
       <body className="bg-black">
         <NavBar />
         {children}
-        <Footer />
         <AnalyticsWrapper />
       </body>
     </html>
