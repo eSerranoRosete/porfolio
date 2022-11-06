@@ -1,18 +1,24 @@
+"use client";
+
 import Link from "next/link";
 import Hero from "../../components/Hero";
 import TechStackItem from "../../components/TechStackItem";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
     <>
       <Hero>
-        <h1 className="mb-10 text-9xl lg:text-8xl">
-          Take a look to the projects I have{" "}
-          <span className="font-extralight italic opacity-40">
-            been working on.
-          </span>
-        </h1>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 1 }}
+          className="mb-10 text-9xl lg:text-8xl"
+        >
+          Take a look at some of the projects I have{" "}
+          <span className="font-thin italic opacity-50">been working on.</span>
+        </motion.h1>
       </Hero>
       <section className="space-y-20 bg-zinc-100 py-32">
         <div className="container m-auto gap-5 space-y-10 lg:grid lg:grid-cols-2 lg:space-y-0">
@@ -35,8 +41,8 @@ const page = () => {
               <div className="flex flex-wrap items-center gap-5">
                 <TechStackItem type="dark" name="Express" />
                 <TechStackItem type="dark" name="Node JS" />
+                <TechStackItem type="dark" name="MongoDB" />
                 <TechStackItem type="dark" name="React" />
-                <TechStackItem type="dark" name="Next JS" />
                 <TechStackItem type="dark" name="Tailwindcss" />
               </div>
             </div>
@@ -47,7 +53,7 @@ const page = () => {
             />
             <Link
               target="_blank"
-              className="flex w-full items-center justify-center rounded-md border border-white py-2 text-2xl lg:text-sm"
+              className="flex w-full items-center justify-center rounded-md border border-white py-2 text-3xl lg:text-sm"
               href="https://inteminer.vercel.app/6318075e2146d942018ce831"
             >
               Open Live Project{" "}
@@ -74,8 +80,7 @@ const page = () => {
               <div className="flex flex-wrap items-center gap-5">
                 <TechStackItem type="light" name="Express" />
                 <TechStackItem type="light" name="Node JS" />
-                <TechStackItem type="light" name="React" />
-                <TechStackItem type="light" name="Next JS" />
+                <TechStackItem type="light" name="EJS" />
                 <TechStackItem type="light" name="Tailwindcss" />
               </div>
             </div>
@@ -86,7 +91,7 @@ const page = () => {
             />
             <Link
               target="_blank"
-              className="flex w-full items-center justify-center rounded-md border border-black py-2 text-2xl lg:text-sm"
+              className="flex w-full items-center justify-center rounded-md border border-black py-2 text-3xl lg:text-sm"
               href="https://cotizador.inteminer.com/cliente/6351ebc0b83b047c5dff0b88"
             >
               Open Live Project{" "}
@@ -111,11 +116,9 @@ const page = () => {
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
-                <TechStackItem type="light" name="Express" />
-                <TechStackItem type="light" name="Node JS" />
-                <TechStackItem type="light" name="React" />
-                <TechStackItem type="light" name="Next JS" />
+                <TechStackItem type="light" name="Astro" />
                 <TechStackItem type="light" name="Tailwindcss" />
+                <TechStackItem type="light" name="React" />
               </div>
             </div>
             <img
@@ -125,7 +128,7 @@ const page = () => {
             />
             <Link
               target="_blank"
-              className="flex w-full items-center justify-center rounded-md border border-black py-2 text-2xl lg:text-sm"
+              className="flex w-full items-center justify-center rounded-md border border-black py-2 text-3xl lg:text-sm"
               href="https://segday.mx"
             >
               Open Live Project{" "}

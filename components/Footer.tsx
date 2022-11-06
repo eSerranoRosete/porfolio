@@ -1,3 +1,4 @@
+import Link from "next/link";
 import MainMenu from "./navigation/MainMenu";
 
 const Footer = () => {
@@ -13,7 +14,15 @@ const Footer = () => {
               className="font-thin italic underline"
             >
               eserrano@inteminer.com
-            </a>
+            </a>{" "}
+            or see my{" "}
+            <Link
+              target="_blank"
+              href="https://inteminer.vercel.app/633519f1042a8c450319d886"
+              className="font-extralight italic underline"
+            >
+              Digital Business Card
+            </Link>
           </p>
         </div>
         <MainMenu />

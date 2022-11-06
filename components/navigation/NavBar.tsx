@@ -1,25 +1,31 @@
+"use client";
+
 import Link from "next/link";
 import { Bars2Icon } from "@heroicons/react/20/solid";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   return (
-    <header className="absolute top-0 z-50 w-full">
+    <motion.header
+      initial={{ opacity: 0, y: "-100%" }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5, delay: 0.3, ease: "easeInOut" }}
+      className="absolute top-0 z-50 w-full"
+    >
       <nav className="container m-auto flex items-center justify-between px-10 py-10 text-white">
         <Link
           href="/"
           className="flex w-fit items-baseline text-4xl font-semibold lg:text-base"
         >
-          {/* <Image
+          <img
             src="/inteminer-icon.svg"
             alt="Inteminer Icon"
-            width={15}
-            height={15}
-            className="mr-2"
-          /> */}
+            className="mr-2 w-7 lg:w-4"
+          />
           EDUARDO SERRANO
         </Link>
         <Bars2Icon className="w-14 lg:hidden" />
-        <ul className="hidden items-center space-x-6 text-xs lg:flex">
+        <ul className="hidden items-center space-x-6 text-sm lg:flex">
           <li className="opacity-70 hover:opacity-100">
             <Link href="https://twitter.com/eserrano_r" target="_blank">
               Twitter
@@ -40,7 +46,8 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              target="_blank"
+              href="https://inteminer.vercel.app/633519f1042a8c450319d886"
               className="cursor-pointer rounded-md border border-white px-6 py-2 opacity-70 hover:opacity-100"
             >
               Contact Me
@@ -48,7 +55,7 @@ const NavBar = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
