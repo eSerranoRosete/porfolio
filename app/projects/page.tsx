@@ -29,13 +29,15 @@ const Projects = () => {
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
                 <p className="mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  quia non corrupti explicabo possimus reiciendis omnis quisquam
-                  accusantium recusandae architecto!
+                  Web Application for creating digital bussiness cards with{" "}
+                  <b>+100 users.</b> Maps through user info stored in database
+                  and renders react application. User content served from
+                  express REST API with capability for user uploads stored in
+                  S3.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Maiores, iure.
+                  Dinamic generation of QR code and VCF file to avoid unnecesary
+                  file storage.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
@@ -64,17 +66,19 @@ const Projects = () => {
           <div className="space-y-20 rounded-xl border border-black px-10 py-10">
             <div>
               <h2 className="mb-10 text-7xl font-medium lg:text-4xl">
-                Real Estate Price Simulation
+                Real Estate Mortage Simulator
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
                 <p className="mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  quia non corrupti explicabo possimus reiciendis omnis quisquam
-                  accusantium recusandae architecto!
+                  Application used by <b>+75</b> Real Estate agents to calculate
+                  mortage payments for a specific company. Application fetches
+                  user data from API to determine the email the notification
+                  will be sent to when someone uses the Calculator, serving as a
+                  lead generator.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Maiores, iure.
+                  Versions for public and certified agents with different inputs
+                  and capabilities.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
@@ -106,13 +110,12 @@ const Projects = () => {
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
                 <p className="mb-5">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  quia non corrupti explicabo possimus reiciendis omnis quisquam
-                  accusantium recusandae architecto!
+                  Static website for company built with astro and deployed to
+                  shared hosting. Contact form connected to 3rd party service.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Maiores, iure.
+                  Designed logo and website using tailwindcss design system with
+                  fully integrated mobile responsiveness.
                 </p>
               </div>
               <div className="flex flex-wrap items-center gap-5">
