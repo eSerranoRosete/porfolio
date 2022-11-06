@@ -6,7 +6,7 @@ import TechStackItem from "../../components/TechStackItem";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 
-const page = () => {
+const Projects = () => {
   return (
     <>
       <Hero>
@@ -141,4 +141,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Projects;

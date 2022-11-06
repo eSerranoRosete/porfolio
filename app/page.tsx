@@ -6,7 +6,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 import Hero from "../components/Hero";
 import { motion } from "framer-motion";
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
       <Hero>
