@@ -10,7 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <head></head>
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className="bg-black">
         <NavBar />
         {children}
