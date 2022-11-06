@@ -111,11 +111,11 @@ const Projects = () => {
                 Segday.mx
               </h2>
               <div className="mb-10 text-5xl font-extralight lg:text-xl">
-                <p className="mb-5">
+                <p className="mb-5 leading-relaxed">
                   Sitio web estático diseñado y construido para una compañía
                   integradora de sistemas de seguridad.
                 </p>
-                <p>
+                <p className="leading-relaxed">
                   Diseño de logo y sitio web responsibo utilizando sistema de
                   diseño Tailwindcss.
                 </p>
