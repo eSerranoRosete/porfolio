@@ -10,7 +10,7 @@ const Skills = () => {
       items: [
         { type: "HTML", percentage: 97 },
         { type: "CSS3", percentage: 92 },
-        { type: "MongoDB", percentage: 90 },
+        { type: "Javascript", percentage: 90 },
       ],
     },
     {
