@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const Hero = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="relative bg-black/70">
-      <div className="container m-auto flex min-h-screen max-w-md items-center p-10 text-white ">
+    <div className="relative bg-black/50">
+      <div className="container z-20 m-auto flex min-h-screen max-w-md items-center p-10 text-white ">
         <motion.div
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
