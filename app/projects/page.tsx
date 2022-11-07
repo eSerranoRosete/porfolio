@@ -26,7 +26,7 @@ const Projects = () => {
     {
       title: "Segday.mx",
       p1: "Sitio web estático diseñado y construido para una compañía integradora de sistemas de seguridad.",
-      p2: "Diseño de logo y sitio web responsibo utilizando sistema de diseño Tailwindcss.",
+      p2: "Diseño de logo y sitio web responsivo utilizando sistema de diseño Tailwindcss.",
       techStack: ["Astro", "React", "Tailwindcss"],
       livePreview: "https://segday.mx/",
       img: "/segday-project.png",
