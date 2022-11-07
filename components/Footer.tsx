@@ -28,20 +28,12 @@ const Footer = () => {
           <ul className="mt-10 flex items-center space-x-5">
             <a target="_blank" href="https://github.com/eSerranoRosete">
               <li>
-                <img
-                  className="w-7"
-                  src="/social-icons/github.png"
-                  alt="Github"
-                />
+                <img className="w-7" src="/github.png" alt="Github" />
               </li>
             </a>
             <a target="_blank" href="https://twitter.com/eserrano_r">
               <li>
-                <img
-                  className="w-7"
-                  src="/social-icons/twitter.png"
-                  alt="Twitter"
-                />
+                <img className="w-7" src="/twitter.png" alt="Twitter" />
               </li>
             </a>
             <a
@@ -49,11 +41,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/eduardo-serrano-46071a19b/"
             >
               <li>
-                <img
-                  className="w-7"
-                  src="/social-icons/linkedin.png"
-                  alt="Linkedin"
-                />
+                <img className="w-7" src="/linkedin.png" alt="Linkedin" />
               </li>
             </a>
           </ul>
