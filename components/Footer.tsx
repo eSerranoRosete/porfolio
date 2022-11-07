@@ -31,11 +31,6 @@ const Footer = () => {
                 <img className="w-7" src="/github.png" alt="Github" />
               </li>
             </a>
-            <a target="_blank" href="https://twitter.com/eserrano_r">
-              <li>
-                <img className="w-7" src="/twitter.png" alt="Twitter" />
-              </li>
-            </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/eduardo-serrano-46071a19b/"

@@ -54,17 +54,12 @@ const Home = () => {
             </h2>
             <div className="mb-10 space-y-5 text-xl font-light">
               <p>
-                Soy un{" "}
-                <i className="font-normal text-emerald-500 underline">
-                  Desarrollador Web Full Stack
-                </i>{" "}
-                localizado en la Ciudad de México. 🇲🇽
+                Soy un <i>Desarrollador Web Full Stack</i> localizado en la
+                Ciudad de México. 🇲🇽
               </p>
               <p>
                 Por los ultimos dos años, he estado{" "}
-                <i className="font-normal text-emerald-500 underline">
-                  diseñando, construyendo y manteniendo{" "}
-                </i>
+                <i>diseñando, construyendo y manteniendo </i>
                 applicaciones web. Disfruto de aprender nuevas tecnologías y
                 ponerme nuevos retos constantemente.
               </p>
@@ -88,6 +83,7 @@ const Home = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.1 }}
               viewport={{ once: true }}
+              className="selection:bg-black/20"
             >
               <h3 className="mb-10 text-4xl font-medium">
                 Ve estas{" "}

@@ -70,7 +70,7 @@ const Skills = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
-            className="text-4xl font-medium"
+            className="text-4xl font-medium selection:bg-black/20"
           >
             Comprometido con el{" "}
             <i className="font-extralight">proceso de aprendizaje</i> de nuevas

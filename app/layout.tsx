@@ -13,7 +13,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" type="image/png" href="/favicon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="bg-black">
+      <body className="bg-black selection:bg-emerald-500/40">
         <MainNav />
         {children}
       </body>
