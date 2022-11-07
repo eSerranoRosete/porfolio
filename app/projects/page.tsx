@@ -20,7 +20,7 @@ const Projects = () => {
       techStack: ["Express", "NodeJS", "EJS", "Tailwindcss"],
       livePreview:
         "https://cotizador.inteminer.com/cliente/6351ebc0b83b047c5dff0b88",
-      img: "/quoter-portfolio.png",
+      img: "/quoter-project.png",
       mode: "light",
     },
     {
@@ -29,7 +29,7 @@ const Projects = () => {
       p2: "Diseño de logo y sitio web responsibo utilizando sistema de diseño Tailwindcss.",
       techStack: ["Astro", "React", "Tailwindcss"],
       livePreview: "https://segday.mx/",
-      img: "/segday-portfolio.png",
+      img: "/segday-project.png",
       mode: "dark",
     },
   ];
