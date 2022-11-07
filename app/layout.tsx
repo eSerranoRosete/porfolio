@@ -1,5 +1,5 @@
-import NavBar from "../components/navigation/NavBar";
-import { AnalyticsWrapper } from "../components/analytics";
+import MainMenu from "../components/MainMenu";
+import MainNav from "../components/MainNav";
 import "../styles/globals.css";
 
 export default function RootLayout({
@@ -12,11 +12,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="apple-touch-icon" type="image/png" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="bg-black">
-        <NavBar />
+        <MainNav />
         {children}
-        <AnalyticsWrapper />
       </body>
     </html>
   );

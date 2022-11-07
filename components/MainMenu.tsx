@@ -2,19 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { motion } from "framer-motion";
 
 const MainMenu = () => {
   const pathname = usePathname();
 
   return (
-    <motion.ul
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ ease: "easeInOut", delay: 0.5, duration: 0.5 }}
-      viewport={{ once: true }}
-      className="flex space-x-8 text-4xl lg:text-base"
-    >
+    <ul className="container flex max-w-sm items-center justify-between rounded-2xl text-base text-white shadow-xl">
       <li>
         <Link
           href="/"
@@ -51,7 +44,7 @@ const MainMenu = () => {
           Proyectos
         </Link>
       </li>
-    </motion.ul>
+    </ul>
   );
 };
 
