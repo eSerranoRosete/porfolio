@@ -1,4 +1,3 @@
-import MainMenu from "../components/MainMenu";
 import MainNav from "../components/MainNav";
 import "../styles/globals.css";
 
