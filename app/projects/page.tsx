@@ -38,8 +38,9 @@ const Projects = () => {
     <div>
       <Hero>
         <h1 className="mb-10">
-          Hecha un vistazo a algunos de los proyectos{" "}
-          <i className="font-thin opacity-30">en los que he trabajado.</i>
+          Hecha un vistazo a algunos de los{" "}
+          <i className="font-thin text-emerald-500">proyectos</i> en los que he
+          trabajado.
         </h1>
       </Hero>
       <main className="bg-zinc-200 py-32">

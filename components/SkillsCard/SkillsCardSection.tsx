@@ -8,7 +8,7 @@ export interface SkillsCardInterface {
 
 const SkillsCardSection = ({ props }: { props: SkillsCardInterface }) => {
   return (
-    <div className="md:self-end">
+    <div className="z-10 md:self-end">
       <h6 className="text-lg text-zinc-400">{props.title}</h6>
       <ul>
         {props.items.map((item) => (

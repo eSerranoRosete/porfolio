@@ -25,6 +25,39 @@ const Footer = () => {
             </Link>
           </p>
           <MainMenu />
+          <ul className="mt-10 flex items-center space-x-5">
+            <a target="_blank" href="https://github.com/eSerranoRosete">
+              <li>
+                <img
+                  className="w-7"
+                  src="/social-icons/github.png"
+                  alt="Github"
+                />
+              </li>
+            </a>
+            <a target="_blank" href="https://twitter.com/eserrano_r">
+              <li>
+                <img
+                  className="w-7"
+                  src="/social-icons/twitter.png"
+                  alt="Twitter"
+                />
+              </li>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/eduardo-serrano-46071a19b/"
+            >
+              <li>
+                <img
+                  className="w-7"
+                  src="/social-icons/linkedin.png"
+                  alt="Linkedin"
+                />
+              </li>
+            </a>
+          </ul>
+          <em className="text-base">eserrano@inteminer.com</em>
         </div>
       </div>
     </footer>

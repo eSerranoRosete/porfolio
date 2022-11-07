@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import MainButton from "../components/MainButton";
@@ -38,8 +41,9 @@ const Home = () => {
     <div>
       <Hero>
         <h1 className="mb-10">
-          Desarrollador web creativo full stack dispuesto{" "}
-          <i className="font-thin opacity-30">a tomar un desafío.</i>
+          Desarrollador web creativo{" "}
+          <i className="font-thin text-emerald-500">full stack</i> dispuesto a
+          tomar un desafío.
         </h1>
       </Hero>
       <main className="bg-zinc-200 pt-32">
@@ -66,6 +70,7 @@ const Home = () => {
               </p>
             </div>
             <MainButton
+              target="_blank"
               mode="dark"
               href="https://drive.google.com/file/d/1C5p77ecQYMn-Fj9cFO_Bi1RcuKpb_fXu/view?usp=share_link"
             >
@@ -74,11 +79,16 @@ const Home = () => {
           </div>
         </section>
         <section className="p-5 pb-32">
-          <SkillsCard elements={skills} />
+          <SkillsCard openFull={true} elements={skills} />
         </section>
         <section className="bg-emerald-500">
           <div className="container m-auto flex min-h-screen max-w-md items-center p-10">
-            <div>
+            <motion.div
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.1 }}
+              viewport={{ once: true }}
+            >
               <h3 className="mb-10 text-4xl font-medium">
                 Ve estas{" "}
                 <i className="font-extralight">habilidades en práctica</i>{" "}
@@ -88,7 +98,7 @@ const Home = () => {
                 Ver Projectos Recientes{" "}
                 <ArrowUpRightIcon className="ml-2 w-5" />
               </MainButton>
-            </div>
+            </motion.div>
           </div>
         </section>
       </main>

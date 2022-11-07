@@ -1,7 +1,10 @@
+"use client";
+
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import SkillsCard from "../../components/SkillsCard/SkillsCard";
 import { SkillsCardInterface } from "../../components/SkillsCard/SkillsCardSection";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skills: SkillsCardInterface[] = [
@@ -56,20 +59,26 @@ const Skills = () => {
     <div>
       <Hero>
         <h1 className="mb-10">
-          He estado aprendiendo muchas cosas ultimamente{" "}
-          <i className="font-thin opacity-30"> y me encanta.</i>
+          He estado <i className="font-thin text-emerald-500">aprendiendo</i>{" "}
+          muchas cosas ultimamente y me encanta.
         </h1>
       </Hero>
       <main className="bg-emerald-500 py-32">
         <section className="container m-auto flex min-h-max max-w-md items-center p-10">
-          <h3 className="text-4xl font-medium">
+          <motion.h3
+            initial={{ y: 30, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-4xl font-medium"
+          >
             Comprometido con el{" "}
             <i className="font-extralight">proceso de aprendizaje</i> de nuevas
             tecnologías y habilidades.
-          </h3>
+          </motion.h3>
         </section>
         <section className="p-5">
-          <SkillsCard elements={skills} />
+          <SkillsCard openFull={false} elements={skills} />
         </section>
       </main>
       <Footer />

@@ -30,6 +30,7 @@ const ProjectCard = ({ data }: { data: ProjectCardInterface }) => {
           items={data.techStack}
         />
         <MainButton
+          target="_blank"
           mode={data.mode == "dark" ? "ligh" : "dark"}
           href={data.livePreview}
         >

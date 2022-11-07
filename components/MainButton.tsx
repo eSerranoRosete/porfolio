@@ -4,13 +4,16 @@ const MainButton = ({
   href,
   children,
   mode,
+  target,
 }: {
   href: string;
   children: React.ReactNode;
   mode: string;
+  target?: string;
 }) => {
   return (
     <Link
+      target={target}
       className={`inline-flex w-full items-center justify-center rounded-md border px-6 py-2 text-sm md:w-fit ${
         mode == "dark" ? "border-black" : "border-white"
       }`}
