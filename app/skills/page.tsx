@@ -9,27 +9,25 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const skills: SkillsCardInterface[] = [
     {
-      title: "Lo Básico",
+      title: "Básics",
       items: [
         { type: "HTML", percentage: 97 },
-        { type: "CSS3", percentage: 92 },
-        { type: "Javascript", percentage: 90 },
+        { type: "CSS", percentage: 92 },
+        { type: "Javascript", percentage: 92 },
       ],
     },
     {
-      title: "Tecnologías Avanzadas",
+      title: "Frameworks",
       items: [
         { type: "React", percentage: 87 },
-        { type: "NextJS", percentage: 90 },
-        { type: "NodeJS", percentage: 95 },
-        { type: "Express", percentage: 93 },
+        { type: "NextJS", percentage: 87 },
+        { type: "Express", percentage: 90 },
       ],
     },
     {
       title: "Herramientas",
       items: [
         { type: "Git", percentage: 86 },
-        { type: "GitHub", percentage: 97 },
         { type: "Figma", percentage: 90 },
       ],
     },
@@ -60,7 +58,7 @@ const Skills = () => {
       <Hero>
         <h1 className="mb-10">
           He estado <i className="font-thin text-emerald-500">aprendiendo</i>{" "}
-          muchas cosas ultimamente y me encanta.
+          muchas cosas ultimamente.
         </h1>
       </Hero>
       <main className="bg-emerald-500 py-32">

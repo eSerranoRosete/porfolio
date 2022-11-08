@@ -12,7 +12,7 @@ const SkillsCard = ({
   return (
     <div className="container relative m-auto grid max-w-3xl grid-cols-1 gap-10 overflow-hidden rounded-md bg-black px-5 py-10 text-white shadow-2xl md:grid-cols-2 lg:grid-cols-3">
       <h2 className="z-10 flex items-center justify-between text-3xl font-semibold md:col-span-2 lg:col-span-3">
-        Habilidades{" "}
+        Skill Set{" "}
         {openFull ? (
           <Link href="/skills" className="flex items-center text-sm">
             <ArrowTopRightOnSquareIcon className="ml-2 w-6" />

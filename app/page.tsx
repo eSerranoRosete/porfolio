@@ -11,27 +11,25 @@ import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 const Home = () => {
   const skills: SkillsCardInterface[] = [
     {
-      title: "Lo Básico",
+      title: "Básics",
       items: [
         { type: "HTML", percentage: 97 },
-        { type: "CSS3", percentage: 92 },
-        { type: "Javascript", percentage: 90 },
+        { type: "CSS", percentage: 92 },
+        { type: "Javascript", percentage: 92 },
       ],
     },
     {
-      title: "Tecnologías Avanzadas",
+      title: "Frameworks",
       items: [
         { type: "React", percentage: 87 },
-        { type: "NextJS", percentage: 90 },
-        { type: "NodeJS", percentage: 95 },
-        { type: "Express", percentage: 93 },
+        { type: "NextJS", percentage: 87 },
+        { type: "Express", percentage: 90 },
       ],
     },
     {
       title: "Herramientas",
       items: [
         { type: "Git", percentage: 86 },
-        { type: "GitHub", percentage: 97 },
         { type: "Figma", percentage: 90 },
       ],
     },
@@ -41,9 +39,8 @@ const Home = () => {
     <div>
       <Hero>
         <h1 className="mb-10">
-          Desarrollador web creativo{" "}
-          <i className="font-thin text-emerald-500">full stack</i> dispuesto a
-          tomar un desafío.
+          Desarrollador web{" "}
+          <i className="font-thin text-emerald-500">Front End </i>creativo.
         </h1>
       </Hero>
       <main className="bg-zinc-200 pt-32">
@@ -52,16 +49,16 @@ const Home = () => {
             <h2 className="mb-10 text-5xl font-medium">
               Hola, mi nombre es Eduardo.
             </h2>
-            <div className="mb-10 space-y-5 text-xl font-light">
+            <div className="mb-10 space-y-5 text-xl font-light decoration-emerald-500">
               <p>
-                Soy un <i>Desarrollador Web Full Stack</i> localizado en la
-                Ciudad de México. 🇲🇽
+                Soy un <u>Desarrollador Web Front End</u>.
               </p>
               <p>
                 Por los ultimos dos años, he estado{" "}
-                <i>diseñando, construyendo y manteniendo </i>
-                applicaciones web. Disfruto de aprender nuevas tecnologías y
-                ponerme nuevos retos constantemente.
+                <u>diseñando, construyendo y manteniendo </u>
+                applicaciones web utilizando tecnologías web modernas. Disfruto
+                de aprender nuevas tecnologías y ponerme nuevos retos
+                constantemente.
               </p>
             </div>
             <MainButton

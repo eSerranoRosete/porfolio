@@ -11,7 +11,7 @@ const Footer = () => {
             Envíame un{" "}
             <a
               href="mailto:eserrano@inteminer.com"
-              className="font-thin italic underline"
+              className="font-thin italic text-emerald-500 underline"
             >
               email
             </a>{" "}
@@ -19,7 +19,7 @@ const Footer = () => {
             <Link
               target="_blank"
               href="https://inteminer.vercel.app/633519f1042a8c450319d886"
-              className="font-extralight italic underline"
+              className="font-extralight italic text-emerald-500 underline"
             >
               Tarjeta Digital
             </Link>
