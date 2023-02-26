@@ -1,9 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
-import { ChatBubbleLeftIcon } from "@heroicons/react/20/solid";
+import HeroCard from "../components/HeroCard/HeroCard";
 
 const Index = () => {
+  document.body.style.background = "black";
+
   return (
     <>
       <div className="min-h-screen bg-black">
@@ -40,7 +42,7 @@ const Index = () => {
                   Lorem ipsum dolor sit.
                   <Link
                     href="#"
-                    className="block font-bold text-white underline underline-offset-8"
+                    className="block font-bold text-zinc-200 underline underline-offset-8"
                   >
                     Read the blog.
                   </Link>
@@ -55,7 +57,7 @@ const Index = () => {
                   Lorem ipsum dolor sit.
                   <Link
                     href="#"
-                    className="block font-bold text-white underline underline-offset-8"
+                    className="block font-bold text-zinc-200 underline underline-offset-8"
                   >
                     Read the blog.
                   </Link>
@@ -65,39 +67,52 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-4 gap-3">
-            <div className="grid grid-rows-3 rounded-md bg-[#E8B5D5] p-6 py-14 text-black">
-              <div className="row-span-2"></div>
-              <div>
-                <span className="text-lg">01.</span>
-                <h4 className="text-4xl font-medium">Social Media Marketing</h4>
-              </div>
-            </div>
-            <div className="grid grid-rows-3 rounded-md bg-[#D5E86E] p-6 py-14 text-black">
-              <div className="row-span-2"></div>
-              <div>
-                <span className="text-lg">01.</span>
-                <h4 className="text-4xl font-medium">Social Media Marketing</h4>
-              </div>
-            </div>
-            <div className="grid grid-rows-3 rounded-md bg-[#F5BF42] p-6 py-14 text-black">
-              <div className="row-span-2"></div>
-              <div>
-                <span className="text-lg">01.</span>
-                <h4 className="text-4xl font-medium">Social Media Marketing</h4>
-              </div>
-            </div>
-            <div className="grid grid-rows-3 rounded-md bg-[#FEF9F7] p-6 py-14 text-black">
-              <div className="row-span-2"></div>
-              <div>
-                <span className="text-lg">01.</span>
-                <h4 className="text-4xl font-medium">Social Media Marketing</h4>
-              </div>
-            </div>
+            {heroCards.map((card, i) => (
+              <HeroCard
+                href={card.href}
+                background={card.background}
+                color="text-black"
+                title={card.title}
+                desc={card.desc}
+                prefix={`0${i + 1}.`}
+              />
+            ))}
           </div>
         </main>
       </div>
     </>
   );
 };
+
+const heroCards = [
+  {
+    background: "bg-indigo-400",
+    title: "View my recent work",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusantium, dolore.",
+    prefix: "01.",
+    href: "#",
+  },
+  {
+    background: "bg-emerald-500",
+    title: "View my recent work",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusantium, dolore.",
+    prefix: "02.",
+    href: "#",
+  },
+  {
+    background: "bg-rose-500",
+    title: "View my recent work",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusantium, dolore.",
+    prefix: "03.",
+    href: "#",
+  },
+  {
+    background: "bg-zinc-200",
+    title: "View my recent work",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusantium, dolore.",
+    prefix: "04.",
+    href: "#",
+  },
+];
 
 export default Index;
