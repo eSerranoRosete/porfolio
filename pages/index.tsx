@@ -4,8 +4,6 @@ import React from "react";
 import HeroCard from "../components/HeroCard/HeroCard";
 
 const Index = () => {
-  document.body.style.background = "black";
-
   return (
     <>
       <div className="min-h-screen bg-black">
