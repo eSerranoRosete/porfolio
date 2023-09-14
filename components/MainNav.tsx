@@ -7,13 +7,20 @@ import { motion } from "framer-motion";
 const MainMenu = () => {
   const pathname = usePathname();
 
+  const variants = {
+    initial: {
+      y: "-150%",
+    },
+    animate: {
+      y: 0,
+    },
+    exit: {
+      y: "-150%",
+    },
+  };
+
   return (
-    <motion.header
-      initial={{ y: "-150%" }}
-      animate={{ y: 0 }}
-      transition={{ ease: "easeInOut" }}
-      className="absolute top-5 z-50 w-full px-2"
-    >
+    <div className="fixed top-5 z-50 w-full px-2">
       <nav>
         <ul className="mx-auto flex max-w-sm items-center justify-between rounded-2xl bg-black px-8 py-2 text-base text-white shadow-xl">
           <li>
@@ -54,7 +61,7 @@ const MainMenu = () => {
           </li>
         </ul>
       </nav>
-    </motion.header>
+    </div>
   );
 };
 

@@ -37,7 +37,7 @@ const ProjectCard = ({ data }: { data: ProjectCardInterface }) => {
           Ver Projecto en Vivo <ArrowUpRightIcon className="ml-2 w-5" />
         </MainButton>
       </div>
-      <div className="flex items-end justify-center px-10">
+      <div className="flex items-center justify-center px-10">
         <img src={data.img} alt={data.title} className="max-h-96" />
       </div>
     </div>

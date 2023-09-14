@@ -1,3 +1,5 @@
+"use client";
+
 import MainNav from "../components/MainNav";
 import "../styles/globals.css";
 

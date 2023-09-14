@@ -54,7 +54,7 @@ const Home = () => {
                 Soy un <u>Desarrollador Web Front End</u>.
               </p>
               <p>
-                Por los ultimos dos años, he estado{" "}
+                Por los ultimos tres años, he estado{" "}
                 <u>diseñando, construyendo y manteniendo </u>
                 applicaciones web utilizando tecnologías web modernas. Disfruto
                 de aprender nuevas tecnologías y ponerme nuevos retos
@@ -64,7 +64,7 @@ const Home = () => {
             <MainButton
               target="_blank"
               mode="dark"
-              href="https://drive.google.com/file/d/1C5p77ecQYMn-Fj9cFO_Bi1RcuKpb_fXu/view?usp=share_link"
+              href="https://drive.google.com/file/d/1m9DP9oyasmHVyFbgqONGNGukHNhOisDx/view?usp=sharing"
             >
               Ver Curriculum <ArrowUpRightIcon className="ml-2 w-5" />
             </MainButton>

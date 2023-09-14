@@ -18,7 +18,7 @@ const Footer = () => {
             o visita mi{" "}
             <Link
               target="_blank"
-              href="https://inteminer.vercel.app/633519f1042a8c450319d886"
+              href="https://modular-saas.vercel.app/card/TUtvl2qm5ujswBvZpuTK"
               className="font-extralight italic text-emerald-500 underline"
             >
               Tarjeta Digital

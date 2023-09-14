@@ -8,10 +8,18 @@ const Projects = () => {
   const projects: ProjectCardInterface[] = [
     {
       title: "Tarjetas de Presentación Digital",
-      p1: "Aplicación web para crear tarjetas de presentación digitales con más de 100 usuarios. Obtiene datos de usuario de una REST API construida con express y con capacidades de almacenamiento de archivos de usuario en S3.",
+      p1: "Aplicación web para crear tarjetas de presentación digitales con más de 300 usuarios. Obtiene datos de usuario de una REST API construida con express y con capacidades de almacenamiento de archivos de usuario en S3.",
       techStack: ["Express", "MongoDB", "NodeJS", "React", "Tailwindcss"],
       livePreview: "https://inteminer.vercel.app/6318075e2146d942018ce831",
       img: "/dbcards-project.png",
+      mode: "dark",
+    },
+    {
+      title: "Modular Saas",
+      p1: "Version 2.0 de tarjetas de presentación digital auto-gestionables. Autenticación, almacenamiento de archivos, envío de emails, y más. Construida con NextJS y Tailwindcss.",
+      techStack: ["Next13", "Tailwind", "NextAuth", "Firebase", "Typescript"],
+      livePreview: "https://modular-saas.vercel.app/",
+      img: "/mac.png",
       mode: "dark",
     },
     {
@@ -22,15 +30,6 @@ const Projects = () => {
         "https://cotizador.inteminer.com/cliente/6351ebc0b83b047c5dff0b88",
       img: "/quoter-project.png",
       mode: "light",
-    },
-    {
-      title: "Segday.mx",
-      p1: "Sitio web estático diseñado y construido para una compañía integradora de sistemas de seguridad.",
-      p2: "Diseño de logo y sitio web responsivo utilizando sistema de diseño Tailwindcss.",
-      techStack: ["Astro", "React", "Tailwindcss"],
-      livePreview: "https://segday.mx/",
-      img: "/segday-project.png",
-      mode: "dark",
     },
   ];
 
